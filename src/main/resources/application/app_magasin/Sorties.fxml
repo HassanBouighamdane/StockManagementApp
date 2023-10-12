@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="427.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.app_magasin.Sorties">
+   <children>
+      <Label alignment="CENTER" layoutX="211.0" layoutY="24.0" prefHeight="29.0" prefWidth="167.0" text="Sorties de stock" textFill="#47204e">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <ScrollPane layoutX="18.0" layoutY="80.0" prefHeight="333.0" prefWidth="552.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0" />
+        </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

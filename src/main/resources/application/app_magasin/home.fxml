@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="648.0" prefWidth="978.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.app_magasin.HomeController">
+   <children>
+      <BorderPane fx:id="borderPane" prefHeight="648.0" prefWidth="1048.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-70.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <AnchorPane prefHeight="9.0" prefWidth="889.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+               <children>
+                  <Label fx:id="Menu" layoutX="14.0" layoutY="3.0" prefHeight="22.0" prefWidth="81.0" text="MENU" textFill="#b7b7b7">
+                     <graphic>
+                        <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/menu1.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <MenuButton fx:id="languageButton" cache="true" layoutX="998.0" layoutY="1.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" style="-fx-background-color: #47204E;" text="FR" textFill="WHITE">
+                    <items>
+                      <MenuItem mnemonicParsing="false" onAction="#frenchLangauge" text="FR" />
+                      <MenuItem mnemonicParsing="false" onAction="#arabicLangauge" text="AR" />
+                    </items>
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </MenuButton>
+               </children>
+            </AnchorPane>
+         </top>
+         <left>
+            <AnchorPane fx:id="slider" prefHeight="475.0" prefWidth="176.0" style="-fx-background-color: #47204E;" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox layoutX="33.0" layoutY="44.0" prefHeight="368.0" prefWidth="176.0" AnchorPane.bottomAnchor="57.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="50.0">
+                     <children>
+                        <Button fx:id="home" alignment="BASELINE_LEFT" blendMode="LIGHTEN" mnemonicParsing="false" onAction="#handleButtonClick" onMouseClicked="#home" prefHeight="45.0" prefWidth="227.0" style="-fx-background-color: #47204E;" styleClass="sidebarItem" text="Home" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/dash.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="stockButton" alignment="BASELINE_LEFT" blendMode="LIGHTEN" mnemonicParsing="false" onAction="#handleButtonClick" onMouseClicked="#stock" prefHeight="45.0" prefWidth="227.0" style="-fx-background-color: transparent;" styleClass="sidebarItem" text="Stock" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/data.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="EntreeButton" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#handleButtonClick" onMouseClicked="#entrees" prefHeight="45.0" prefWidth="227.0" style="-fx-background-color: transparent;" styleClass="sidebarItem" text="Entrées" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true" />
+                           </graphic>
+                        </Button>
+                        <Button fx:id="SortieButton" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#handleButtonClick" onMouseClicked="#sorties" prefHeight="45.0" prefWidth="227.0" style="-fx-background-color: transparent;" styleClass="sidebarItem" text="Sorties" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true" />
+                           </graphic>
+                        </Button>
+                        <Button fx:id="categorieButton" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#handleButtonClick" onMouseClicked="#categorie" prefHeight="45.0" prefWidth="227.0" style="-fx-background-color: transparent;" styleClass="sidebarItem" text="Catégorie" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true" />
+                           </graphic>
+                        </Button>
+                        <Button fx:id="transactionButton" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#handleButtonClick" onMouseClicked="#transaction" prefHeight="45.0" prefWidth="225.0" style="-fx-background-color: transparent;" styleClass="sidebarItem" text="Transaction" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                           <graphic>
+                              <ImageView blendMode="LIGHTEN" fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/report.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="fournisseurButton" alignment="BASELINE_LEFT" blendMode="LIGHTEN" mnemonicParsing="false" onAction="#handleButtonClick" onMouseClicked="#fournisseur" prefHeight="45.0" prefWidth="227.0" style="-fx-background-color: transparent;" styleClass="sidebarItem" text="Fournisseurs" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/data.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </VBox>
+                  <Button fx:id="LogoutButton" alignment="BASELINE_LEFT" layoutY="571.0" mnemonicParsing="false" onAction="#logout" onMouseClicked="#logout" prefHeight="43.0" prefWidth="176.0" style="-fx-background-color: #47204E;" styleClass="sidebarItem" text="Déconnecter" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                     <graphic>
+                        <ImageView blendMode="SCREEN" fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/logout.jpeg" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </left>
+         <center>
+            <AnchorPane fx:id="anchorPaneCenter" prefHeight="547.0" prefWidth="859.0" style="-fx-background-color: #FFFFFF;" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="stockHomeButton" contentDisplay="TOP" layoutX="239.0" layoutY="74.0" mnemonicParsing="false" onMouseClicked="#stock" prefHeight="99.0" prefWidth="146.0" style="-fx-background-color: #47204E; -fx-border-radius: 5;" text="Stock" textFill="WHITE">
+                     <graphic>
+                        <ImageView blendMode="ADD" fitHeight="54.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/data.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="transactionHomeButton" contentDisplay="TOP" layoutX="239.0" layoutY="229.0" mnemonicParsing="false" onMouseClicked="#transaction" prefHeight="99.0" prefWidth="146.0" style="-fx-background-color: #47204E; -fx-border-radius: 5;" text="Transaction" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <graphic>
+                        <ImageView blendMode="SRC_ATOP" fitHeight="54.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/report.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="categorieHomeButton" contentDisplay="TOP" layoutX="466.0" layoutY="74.0" mnemonicParsing="false" onMouseClicked="#categorie" prefHeight="99.0" prefWidth="146.0" style="-fx-background-color: #47204E; -fx-border-radius: 5;" text="Catégorie" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <graphic>
+                        <ImageView blendMode="ADD" fitHeight="54.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/report.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="fournisseurHomeButton" contentDisplay="TOP" layoutX="466.0" layoutY="229.0" mnemonicParsing="false" onAction="#handleButtonClick" onMouseClicked="#fournisseur" prefHeight="99.0" prefWidth="146.0" style="-fx-background-color: #47204E; -fx-border-radius: 5;" text="Fournisseur" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <graphic>
+                        <ImageView blendMode="ADD" fitHeight="54.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/report.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="EntreeHomeButton" contentDisplay="TOP" layoutX="239.0" layoutY="390.0" mnemonicParsing="false" onAction="#handleButtonClick" onMouseClicked="#entrees" prefHeight="99.0" prefWidth="146.0" style="-fx-background-color: #47204E; -fx-border-radius: 5;" text="Entrées " textFill="WHITE">
+                     <graphic>
+                        <ImageView blendMode="ADD" fitHeight="54.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/data.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="SortieHomeButton" contentDisplay="TOP" layoutX="466.0" layoutY="390.0" mnemonicParsing="false" onMouseClicked="#sorties" prefHeight="99.0" prefWidth="146.0" style="-fx-background-color: #47204E; -fx-border-radius: 5;" text="Sorties" textFill="WHITE">
+                     <graphic>
+                        <ImageView blendMode="ADD" fitHeight="54.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/data.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

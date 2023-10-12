@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.text.Font?>
+
+<Button fx:id="categoryButton" contentDisplay="TOP" mnemonicParsing="false" prefHeight="78.0" prefWidth="88.0" style="-fx-background-color: #47204E; -fx-border-radius: 5;" textFill="WHITE" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.app_magasin.CategorieController">
+   <graphic>
+      <ImageView fx:id="categoryImageView" fitHeight="33.0" fitWidth="38.0" preserveRatio="true" />
+   </graphic>
+   <font>
+      <Font name="System Bold" size="15.0" />
+   </font>
+</Button>

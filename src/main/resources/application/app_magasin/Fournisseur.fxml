@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="519.0" prefWidth="675.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.app_magasin.FournisseurController">
+    <stylesheets>
+        <!-- Add your custom CSS file here, you can create a new CSS file with your styles -->
+        <!-- Example: <URL value="@path/to/your/custom_styles.css" /> -->
+    </stylesheets>
+    <children>
+        <Label layoutX="202.0" layoutY="14.0" prefHeight="39.0" prefWidth="245.0" text="Les fournisseurs" textAlignment="CENTER">
+            <font>
+                <Font name="System Bold" size="27.0" />
+            </font>
+        </Label>
+        <TableView layoutX="11.0" layoutY="86.0" prefHeight="339.0" prefWidth="641.0">
+            <columns>
+                <TableColumn prefWidth="97.3333740234375" text="Nbr_entré" />
+                <TableColumn prefWidth="134.66661834716797" text="Chiffres d'affaire" />
+                <TableColumn prefWidth="116.66670227050781" text="Nbr_entré" />
+                <TableColumn prefWidth="126.0" text="Téléphone ou Fax" />
+                <TableColumn prefWidth="164.66665649414062" text="Observations" />
+            </columns>
+            <!-- Apply styles to the TableView -->
+            <style>
+                /* Customize the header row background color */
+                .column-header-background {
+                -fx-background-color: #4F81BD;
+                }
+
+                /* Customize the header text color */
+                .column-header-background .label {
+                -fx-text-fill: white;
+                }
+
+                /* Customize the alternating row colors */
+                .table-row-cell:even {
+                -fx-background-color: #F2F2F2;
+                }
+
+                /* Customize the selection color */
+                .table-row-cell:selected {
+                -fx-background-color: #BDD7EE;
+                }
+            </style>
+        </TableView>
+        <Button fx:id="AjouterFourButton" layoutX="332.0" layoutY="453.0" mnemonicParsing="false" style="-fx-background-color: #47204E; -fx-border-radius: 5;" text="Ajouter" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Button>
+    </children>
+</AnchorPane>
