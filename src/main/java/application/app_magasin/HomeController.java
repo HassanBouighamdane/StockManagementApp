@@ -122,10 +122,7 @@ public class HomeController implements Initializable {
         loadPage("Stock");
     }
 
-    public void categorie(MouseEvent mouseEvent) {
-        loadPage("Categorie");
-
-    }
+    public void categorie(MouseEvent mouseEvent) {loadPage("Categorie");}
 
     public void entrees(MouseEvent mouseEvent){
         loadPage("Entrees");

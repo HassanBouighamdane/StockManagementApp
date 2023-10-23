@@ -2,21 +2,29 @@
 
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="427.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.app_magasin.Sorties">
-   <children>
-      <Label alignment="CENTER" layoutX="211.0" layoutY="24.0" prefHeight="29.0" prefWidth="167.0" text="Sorties de stock" textFill="#47204e">
-         <font>
-            <Font name="System Bold" size="19.0" />
-         </font>
-      </Label>
-      <ScrollPane layoutX="18.0" layoutY="80.0" prefHeight="333.0" prefWidth="552.0">
-        <content>
-          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0" />
-        </content>
-      </ScrollPane>
-   </children>
+<AnchorPane prefHeight="537.0" prefWidth="727.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.app_magasin.SortiesController">
+    <Label alignment="CENTER" layoutX="270.0" layoutY="28.0" prefHeight="29.0" prefWidth="167.0" text="Sorties de stock" textFill="#47204e">
+        <font>
+          <Font name="System Bold" size="19.0" />
+        </font>
+    </Label>
+    <ScrollPane fx:id="ScrollPane" layoutX="29.0" layoutY="85.0" prefHeight="418.0" prefWidth="685.0">
+        <TableView prefHeight="412.0" prefWidth="684.0">
+            <columns>
+                <TableColumn fx:id="DateOUT" prefWidth="75.0" text="Date" />
+                <TableColumn fx:id="referenceOUT" prefWidth="75.0" text="Reference" />
+                <TableColumn fx:id="produit" prefWidth="75.0" text="Produit" />
+                <TableColumn fx:id="QuantiteOUT" prefWidth="75.0" text="Quantite" />
+                <TableColumn fx:id="QparCtnOUT" prefWidth="75.0" text="Q/Ctn" />
+                <TableColumn fx:id="PrixVente" prefWidth="75.0" text="Prix Vente" />
+                <TableColumn fx:id="MontantOUT" prefWidth="108.0" text="Montant totale" />
+                <TableColumn fx:id="Client" prefWidth="115.99993896484375" text="Client" />
+            </columns>
+        </TableView>
+    </ScrollPane>
 </AnchorPane>

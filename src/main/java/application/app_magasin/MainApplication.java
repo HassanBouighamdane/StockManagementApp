@@ -5,7 +5,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.layout.Pane; // Import the necessary layout class
 import javafx.stage.Stage;
-import javafx.stage.StageStyle;
+
 
 import java.io.IOException;
 
@@ -19,7 +19,7 @@ public class MainApplication extends Application {
         Scene scene = new Scene(root);
 
 
-        stage.setFullScreen(true);
+        stage.setMaximized(true);
 
         // Set the stage properties
         stage.setTitle("Stock magasin");

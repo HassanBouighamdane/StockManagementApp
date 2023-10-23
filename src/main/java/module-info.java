@@ -14,6 +14,8 @@ module application.app_magasin {
 
     opens application.app_magasin to javafx.fxml;
     exports application.app_magasin;
+    exports application.app_magasin.MainClasses;
+    opens application.app_magasin.MainClasses to javafx.base, javafx.fxml;
 
 
 }

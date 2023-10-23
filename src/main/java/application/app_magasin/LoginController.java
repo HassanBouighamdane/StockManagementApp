@@ -1,6 +1,6 @@
 package application.app_magasin;
 
-import application.app_magasin.DBConnection;
+import application.app_magasin.MainClasses.DBConnection;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;

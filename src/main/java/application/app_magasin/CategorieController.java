@@ -1,7 +1,6 @@
 package application.app_magasin;
 
-import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
+import application.app_magasin.MainClasses.DBConnection;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.geometry.Insets;
@@ -10,10 +9,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
-import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import javafx.scene.input.MouseEvent;
-import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
 
@@ -49,12 +45,8 @@ public class CategorieController  {
 
 
 
-    public void BDCategorie() {
-
-
+    private void BDCategorie() {
         try {
-
-
             gridPane.getChildren().clear();
 
             // Create a single database connection for the entire method

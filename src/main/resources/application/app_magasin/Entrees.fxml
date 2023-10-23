@@ -1,15 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="415.0" prefWidth="613.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/19">
-   <content>
-      <Label alignment="CENTER" prefHeight="29.0" prefWidth="167.0" text="Entrées de stock" textFill="#47204e">
+<AnchorPane prefHeight="596.0" prefWidth="880.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.app_magasin.EntreesController">
+   <children>
+      <Label alignment="CENTER" layoutX="351.0" layoutY="14.0" prefHeight="29.0" prefWidth="167.0" text="Entrée de stock" textFill="#47204e">
          <font>
             <Font name="System Bold" size="19.0" />
          </font>
       </Label>
-   </content>
-</ScrollPane>
+      <TableView fx:id="tableView" layoutX="15.0" layoutY="55.0" prefHeight="455.0" prefWidth="849.0">
+         <columns>
+            <TableColumn fx:id="DateIN" prefWidth="98.00000286102295" text="Date" />
+            <TableColumn fx:id="referenceIN" prefWidth="70.6666488647461" text="Reference" />
+            <TableColumn fx:id="produit" prefWidth="131.3332977294922" text="Produit" />
+            <TableColumn fx:id="QuantiteIN" prefWidth="76.0" text="Quantite" />
+            <TableColumn fx:id="QparCtnIN" prefWidth="60.0" text="Q/Ctn" />
+            <TableColumn fx:id="prixAchat" prefWidth="91.33328247070312" text="Prix Achat" />
+            <TableColumn fx:id="MontantIN" prefWidth="122.66668701171875" text="Montant totale" />
+            <TableColumn fx:id="Fournisseur" prefWidth="193.33331298828125" text="Fournisseur" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

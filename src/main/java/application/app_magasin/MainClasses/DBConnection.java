@@ -1,4 +1,4 @@
-package application.app_magasin;
+package application.app_magasin.MainClasses;
 
 
 import java.sql.Connection;
