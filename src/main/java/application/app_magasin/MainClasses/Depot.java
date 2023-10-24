@@ -7,10 +7,9 @@ public class Depot {
     private String name_depot;
     private List<Produit> Produits;
 
-    public Depot(String id_depot, String name_depot, List<Produit> produits) {
+    public Depot(String id_depot, String name_depot) {
         this.id_depot = id_depot;
         this.name_depot = name_depot;
-        Produits = produits;
     }
 
     public String getId_depot() {
@@ -39,6 +38,6 @@ public class Depot {
 
     @Override
     public String toString() {
-        return name_depot;
+        return id_depot;
     }
 }

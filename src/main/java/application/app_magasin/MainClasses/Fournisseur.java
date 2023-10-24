@@ -3,12 +3,12 @@ package application.app_magasin.MainClasses;
 public class Fournisseur {
     private static int id_fournisseur;
     private String name;
-    private int nbr_entree;
+
     private String Telephone;
 
-    public Fournisseur(String name, int nbr_entree, String telephone) {
+    public Fournisseur(String name, String telephone) {
         this.name = name;
-        this.nbr_entree = nbr_entree;
+
         Telephone = telephone;
     }
 
@@ -25,13 +25,6 @@ public class Fournisseur {
         this.name = name;
     }
 
-    public int getNbr_entree() {
-        return nbr_entree;
-    }
-
-    public void setNbr_entree(int nbr_entree) {
-        this.nbr_entree = nbr_entree;
-    }
 
     public String getTelephone() {
         return Telephone;

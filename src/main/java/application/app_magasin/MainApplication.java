@@ -12,6 +12,7 @@ import java.io.IOException;
 public class MainApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
+
         FXMLLoader fxmlLoader = new FXMLLoader(MainApplication.class.getResource("home.fxml"));
         Pane root = fxmlLoader.load(); // Assuming your root layout in home.fxml is a Pane
 

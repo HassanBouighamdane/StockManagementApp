@@ -1,16 +1,21 @@
 package application.app_magasin.MainClasses;
 
+import java.util.List;
+
 public class Produit {
     private String id_produit;
     private Categorie categorie;
-    private String Designation;
+    private String designation;
     private Fournisseur fournisseur;
+    private List<Depot> depot;
+
 
     public Produit(String id_produit, Categorie categorie, String designation, Fournisseur fournisseur) {
         this.id_produit = id_produit;
         this.categorie = categorie;
-        Designation = designation;
+        this.designation = designation;
         this.fournisseur = fournisseur;
+        this.depot = depot;
     }
 
     public String getId_produit() {
@@ -25,17 +30,26 @@ public class Produit {
         return categorie;
     }
 
+    public String getDesignation() {
+        return designation;
+    }
+
+    public void setDesignation(String designation) {
+        this.designation = designation;
+    }
+
+    public List<Depot> getDepot() {
+        return depot;
+    }
+
+    public void setDepot(List<Depot> depot) {
+        this.depot = depot;
+    }
+
     public void setCategorie(Categorie categorie) {
         this.categorie = categorie;
     }
 
-    public String getDesignation() {
-        return Designation;
-    }
-
-    public void setDesignation(String designation) {
-        Designation = designation;
-    }
 
     public Fournisseur getFournisseur() {
         return fournisseur;
@@ -45,8 +59,9 @@ public class Produit {
         this.fournisseur = fournisseur;
     }
 
+
     @Override
     public String toString() {
-        return Designation;
+        return designation;
     }
 }

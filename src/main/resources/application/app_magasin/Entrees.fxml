@@ -15,14 +15,14 @@
       </Label>
       <TableView fx:id="tableView" layoutX="15.0" layoutY="55.0" prefHeight="455.0" prefWidth="849.0">
          <columns>
+            <TableColumn fx:id="depot" prefWidth="70.6666488647461" text="Depot" />
             <TableColumn fx:id="DateIN" prefWidth="98.00000286102295" text="Date" />
-            <TableColumn fx:id="referenceIN" prefWidth="70.6666488647461" text="Reference" />
             <TableColumn fx:id="produit" prefWidth="131.3332977294922" text="Produit" />
             <TableColumn fx:id="QuantiteIN" prefWidth="76.0" text="Quantite" />
             <TableColumn fx:id="QparCtnIN" prefWidth="60.0" text="Q/Ctn" />
             <TableColumn fx:id="prixAchat" prefWidth="91.33328247070312" text="Prix Achat" />
-            <TableColumn fx:id="MontantIN" prefWidth="122.66668701171875" text="Montant totale" />
             <TableColumn fx:id="Fournisseur" prefWidth="193.33331298828125" text="Fournisseur" />
+            <TableColumn fx:id="MontantTotal" prefWidth="108.00006103515625" text="Montant Total" />
          </columns>
       </TableView>
    </children>

@@ -5,22 +5,32 @@ import java.util.Date;
 public class EntreeData {
     private Date DateIn;
     private Fournisseur fournisseur;
-    private double MontantIN;
+    private double montantTotal;
+    private Depot depot;
     private int QparCtnIN;
     private int QuantiteIN;
     private double prixAchat;
-    private String produit;
-    private String referenceIN;
+    private Produit produit;
 
-    public EntreeData(Date date, Fournisseur fournisseur, double montantIN, int qparCtnIN, int quantiteIN, double prixAchat, String produit, String referenceIN) {
+
+    public EntreeData(Date date, Fournisseur fournisseur, Depot depot, int qparCtnIN, int quantiteIN, double prixAchat, Produit produit, double montantTotal) {
         this.DateIn = date;
         this.fournisseur = fournisseur;
-        this.MontantIN = montantIN;
         this.QparCtnIN = qparCtnIN;
         this.QuantiteIN = quantiteIN;
         this.prixAchat = prixAchat;
         this.produit = produit;
-        this.referenceIN = referenceIN;
+        this.depot=depot;
+        this.montantTotal=montantTotal;
+
+    }
+
+    public Depot getDepot() {
+        return depot;
+    }
+
+    public void setDepot(Depot depot) {
+        this.depot = depot;
     }
 
     public Date getDate() {
@@ -31,8 +41,8 @@ public class EntreeData {
         return fournisseur;
     }
 
-    public double getMontantIN() {
-        return MontantIN;
+    public double getMontantTotal() {
+        return montantTotal;
     }
 
     public int getQparCtnIN() {
@@ -47,11 +57,9 @@ public class EntreeData {
         return prixAchat;
     }
 
-    public String getProduit() {
+    public Produit getProduit() {
         return produit;
     }
 
-    public String getReferenceIN() {
-        return referenceIN;
-    }
+
 }

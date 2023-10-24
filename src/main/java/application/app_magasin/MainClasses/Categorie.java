@@ -1,19 +1,17 @@
 package application.app_magasin.MainClasses;
 
 public class Categorie {
-    private static int id_cat;
+    private int id_cat;
     private String name;
 
     public Categorie(String name) {
         this.name = name;
     }
 
-    public static int getId_cat() {
-        return id_cat;
-    }
 
-    public static void setId_cat(int id_cat) {
-        Categorie.id_cat = id_cat;
+    public Categorie(int id_cat, String name) {
+        this.id_cat = id_cat;
+        this.name = name;
     }
 
     public String getName() {
