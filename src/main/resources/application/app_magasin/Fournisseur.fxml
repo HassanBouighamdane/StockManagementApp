@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="519.0" prefWidth="675.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.app_magasin.FournisseurController">
+<AnchorPane prefHeight="519.0" prefWidth="675.0" xmlns="http://javafx.com/javafx/17.0.9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.app_magasin.FournisseurController">
     <stylesheets>
         <!-- Add your custom CSS file here, you can create a new CSS file with your styles -->
         <!-- Example: <URL value="@path/to/your/custom_styles.css" /> -->
